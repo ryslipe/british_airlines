@@ -5,7 +5,7 @@ PARENT_DIR = Path(__file__).parent.resolve().parent
 DATA_DIR = PARENT_DIR / 'data'
 RAW_DATA_DIR = PARENT_DIR / 'data' / 'raw'
 TRANSFORMED_DATA_DIR = PARENT_DIR / 'data' / 'transformed'
-EXISTING_HASHES_DIR = PARENT_DIR / 'data' / 'hashes'
+EXISTING_CHARS_DIR = PARENT_DIR / 'data' / 'chars'
 DATA_CACHE_DIR = PARENT_DIR / 'data' / 'cache'
 
 MODELS_DIR = PARENT_DIR / 'models'
@@ -25,5 +25,5 @@ if not Path(MODELS_DIR).exists():
 if not Path(DATA_CACHE_DIR).exists():
     os.mkdir(DATA_CACHE_DIR)
 
-if not Path(EXISTING_HASHES_DIR).exists():
-    os.mkdir(EXISTING_HASHES_DIR)
+if not Path(EXISTING_CHARS_DIR).exists():
+    os.mkdir(EXISTING_CHARS_DIR)
