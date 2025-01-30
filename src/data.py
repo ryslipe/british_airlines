@@ -105,18 +105,7 @@ def check_and_update_reviews(base_url: str, start_page: int, end_page: int, exis
         
         return updated_reviews_df
 
-# function to rename columns
-def rename_cols(reviews_df: pd.DataFrame) -> pd.DataFrame:
-    '''Change column names to snake case.'''
-    return reviews_df.rename(columns={
-        'Aircraft': 'aircraft',
-        'Type Of Traveller': 'type_of_traveler', 
-        'Seat Type': 'seat_type', 
-        'Route': 'route', 
-        'Date Flown': 'date_flown', 
-        'Recommended': 'recommended'},
-        inplace=True
-)
+
 
 
 
