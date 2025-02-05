@@ -24,6 +24,7 @@ python-dotenv = "^1.0.1"
 catboost = "^1.2.7"
 optuna = "^4.2.0"
 afinn = "^0.1"
+joblib = "^1.4.2"
 
 
 [build-system]
